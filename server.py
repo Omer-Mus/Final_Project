@@ -52,22 +52,33 @@ app = Flask(__name__)
 @app.route('/')
 def index():
 
-
   # DEBUG: this is debugging code to see what request looks like
-  print(request.args)
-
+    print(request.args)
 
   # context = dict(data = names)
 
   # return render_template("index.html", **context)
-  return render_template("index.html")
+    return render_template("index.html")
 
 
+@app.route('/register.html')
+def register():
+    print(request.args)
+    return render_template("register.html")
 
-@app.route('/register')
-def another():
-  return render_template("another.html")
 
+@app.route('/signup', methods=['POST'])
+def signup():
+    print(request.args)
+
+    fname = request.form['fname']
+    user_name = request.form['user_name']
+    email = request.form['email']
+    pword = request.form['pword']
+    age = request.form['age']
+    allergies = request.form['allergies']
+    zip_code = request.form['zip_code']
+    return render_template("register.html")
 
 # # Example of adding new data to the database
 # @app.route('/add', methods=['POST'])
@@ -85,17 +96,17 @@ def login():
 
 if __name__ == "__main__":
 
-  import click
-  # @click.command()
-  # @click.option('--debug', is_flag=True)
-  # @click.option('--threaded', is_flag=True)
-  # @click.argument('HOST', default='0.0.0.0')
-  # @click.argument('PORT', default=8111, type=int)
-  #
-  # def run(debug, threaded, host, port):
-  #   HOST, PORT = host, port
-  #   print("running on %s:%d" % (HOST, PORT))
-  #   app.run(host=HOST, port=PORT, debug=debug, threaded=threaded)
-  #
-  # run()
-  app.run(debug=True)
+    import click
+    # @click.command()
+    # @click.option('--debug', is_flag=True)
+    # @click.option('--threaded', is_flag=True)
+    # @click.argument('HOST', default='0.0.0.0')
+    # @click.argument('PORT', default=8111, type=int)
+    #
+    # def run(debug, threaded, host, port):
+    #   HOST, PORT = host, port
+    #   print("running on %s:%d" % (HOST, PORT))
+    #   app.run(host=HOST, port=PORT, debug=debug, threaded=threaded)
+    #
+    # run()
+    app.run(debug=True)
