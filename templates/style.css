@@ -48,10 +48,10 @@
     font-weight: bold;
 }
 
-.lable_user_name {
+/*.lable_user_name {
     font-family: Tahoma;
     color: white;
-}
+}*/
 
 .user_name {
     width: 250px;
@@ -63,11 +63,11 @@
     left: 9%;
     top: 25px;
 }
-
+/*
 .lable_password {
     font-family: Tahoma;
     color: white;
-}
+}*/
 
 
 .password {
@@ -80,6 +80,7 @@
     left: 9%;
     top: 35px;
 }
+
 
 .login_button {
     background-color: green;
@@ -104,11 +105,111 @@
 
 
 
+/* register.html */
+
+.full_name_register {
+    width: 250px;
+    padding: 10px;
+    /*    margin: 15px;*/
+    text-align: center;
+    color: grey;
+    position: relative;
+/*    left: 9%;*/
+    top: 15px;
+}
+
+.user_name_register {
+    width: 250px;
+    padding: 10px;
+    /*    margin: 15px;*/
+    text-align: center;
+    color: grey;
+    position: relative;
+/*    left: 9%;*/
+    top: 25px;
+}
+
+.email_address_register {
+    width: 250px;
+    padding: 10px;
+    /*    margin: 15px;*/
+    text-align: center;
+    color: grey;
+    position: relative;
+/*    left: 9%;*/
+    top: 35px;
+}
+
+.password_register {
+    width: 250px;
+    padding: 10px;
+    /*    margin: 15px;*/
+    text-align: center;
+    color: grey;
+    position: relative;
+/*    left: 9%;*/
+    top: 45px;
+}
+
+
+.age_register {
+    width: 250px;
+    padding: 10px;
+    /*    margin: 15px;*/
+    text-align: center;
+    color: grey;
+    position: relative;
+    left: 3%;
+    top: 27px;
+}
+
+.allergies_register {
+    width: 250px;
+    padding: 10px;
+    /*    margin: 15px;*/
+    text-align: center;
+    color: grey;
+    position: relative;
+    left: 3%;
+    top: 37px;
+}
+
+.zipcode_register {
+    width: 250px;
+    padding: 10px;
+    /*    margin: 15px;*/
+    text-align: center;
+    color: grey;
+    position: relative;
+    left: 3%;
+    top: 47px;
+}
+
+.register_button {
+    background-color: green;
+    width: 250px;
+    height: 41px;
+    border: none;
+    font-family: Tahoma;
+    color: white;
+    position: relative;
+    left: 3%;
+    top: 57px;
+}
+
+.login {
+    font-family: Tahoma;
+    color: black;
+    font-size: 15px;
+    position: relative;
+    left: 3%;
+    top: 75px;
+}
+
 
 
 
 /*Nevigation bar*/
-
 ul {
     list-style-type: none;
     margin: 0;
