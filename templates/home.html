@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Garlic</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../static/style.css" rel="stylesheet" type="text/css" />
 </head>
 
     
@@ -21,23 +21,8 @@
             <li><a href="#about">About</a></li>
         </ul>
 
-        <h1>Some famous Computer Scientists</h1>
-        <div>{{data}}</div>
-
-        <div>
-            {% for n in data %}
-            <div>{{n}}</div>
-            {% endfor %}
-        </div>
 
 
-
-
-        <p><a href="another">Go to the other page</a></p>
-
-        <form method="POST" action="/add">
-            <p>Name of new computer scientist: <input type="text" name="name"> <input type="submit" value="Add"></p>
-        </form>
 
 </body>
 
