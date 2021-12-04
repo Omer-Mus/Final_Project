@@ -215,12 +215,15 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    /*background-color: #333;*/
+    background-color: #77bc3e;
 }
 
 li {
     float: left;
-    border-right: 1px solid #bbb;
+    padding: 0px 10px 0px 0px;
+/*    border-right: 1px solid #bbb;*/
+    
 }
 
     li:last-child {
@@ -241,4 +244,48 @@ li {
 
 .active {
     background-color: #04AA6D;
+}
+
+
+
+/* Home.html */
+
+.logo_home {
+    width: 140px;
+}
+
+.search_recipe {
+    width: 250px;
+    padding: 10px;
+    margin: 8px;
+    text-align: center;
+    color: grey;
+    position: relative;
+    top: 5px;
+}
+
+.profile_picture {
+    width: 46px;
+    border-radius: 80px;
+    position: relative;
+    top: 9px;
+}
+.user_profile {
+    font-family: Tahoma;
+    color: white;
+    font-weight: bold;
+    border: white;
+    font-size: 30px;
+}
+
+.category_container {
+    list-style: none;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.picture {
+    width: 46px;
+    border-radius: 80px;
 }
