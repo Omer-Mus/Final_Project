@@ -13,22 +13,38 @@
 <body class="general_background">
 
     <div class="div_first">
-        <form method="POST" action="/signup">
+        <form method="POST" action="">
             <div class="div_left">
-                <input class="full_name_register" type="text" id="fname" name="fname" placeholder="Full Name" required> <br>
-                <input class="user_name_register" type="text" id="fname" name="user_name" placeholder="User Name" required> <br>
-                <input class="email_address_register" type="email" id="fname" name="email" placeholder="Email Address" required> <br>
-                <input class="password_register" type="password" id="lname" name="pword" placeholder="Password" minlength="5" required>
+                {{ form.hidden_tag() }}
+{#                <input class="full_name_register" type="text" id="fname" name="fname" placeholder="Full Name" required>#}
+                {{ form.full_name(class_="full_name_register", id="fname", placeholder="Enter Full Name", autocomplete="off", value="") }}
+                <br>
+{#                <input class="user_name_register" type="text" id="fname" name="user_name" placeholder="User Name" required> #}
+                {{ form.username(class_="user_name_register", id="fname", placeholder="Enter User Name", autocomplete="off", value="") }}
+                <br>
+{#                <input class="email_address_register" type="email" id="fname" name="email" placeholder="Email Address" required>#}
+                {{ form.email(class_="email_address_register", type="email", id="fname", placeholder="Enter Email Address", autocomplete="off", value="") }}
+                <br>
+{#                <input class="password_register" type="password" id="lname" name="pword" placeholder="Password" minlength="5" required>#}
+                {{ form.password(class_="password_register", type="password", id="lname", placeholder="Password", autocomplete="off", value="", minlength="5", maxlength="20") }}
             </div>
 
             <div class="div_right">
 
-                <input class="age_register" type="text" id="fname" name="age" placeholder="Age"> <br>
-                <input class="allergies_register" type="text" id="fname" name="allergies" placeholder="Allergies"> <br>
-                <input class="zipcode_register" type="text" id="fname" name="zip_code" placeholder="Zipcode"> <br>
+{#                <input class="age_register" type="text" id="fname" name="age" placeholder="Age"> #}
+                {{ form.age(class_="age_register", id="fname", placeholder="Age", min="18", autocomplete="off", value="") }}
+                <br>
+{#                <input class="allergies_register" type="text" id="fname" name="allergies" placeholder="Allergies"> #}
+                {{ form.allergies(class_="allergies_register", id="fname", placeholder="allergies", autocomplete="off", value="") }}
+                <br>
+{#                <input class="zipcode_register" type="text" id="fname" name="zip_code" placeholder="Zipcode"> #}
+                {{ form.zip_code(class_="zipcode_register", id="fname", placeholder="Zip code", maxlength="9", autocomplete="off", value="") }}
+                <br>
 
 
-                <button class="register_button">Register</button> <br />
+{#                <button class="register_button">Register</button>#}
+                {{ form.submit(class_="register_button") }}
+                <br />
                 <span class="login">Not your first time? click here to <a href="/">login</a>.</span>
             </div>
         </form>
