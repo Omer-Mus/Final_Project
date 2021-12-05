@@ -20,12 +20,12 @@
         </div>
 
         <div class="div_right">
-            <form action="" method="POST">
+            <form action="login" method="POST">
                 {{ form.hidden_tag() }}
 {#                <input class="user_name" type="text" id="fname" name="username" placeholder="Enter User Name" value="{{ request.form.username }}" autocomplete="off" required> <br>#}
                 {{ form.username(class_="user_name", id="fname", placeholder="Enter User Name", autocomplete="off", value="") }}
 {#                <input class="password" type="password" id="lname" name="password" placeholder="Password" value="{{ request.form.password }}" required>#}
-                {{ form.username(class_="password", type="password", id="lname", placeholder="Password", value="") }}
+                {{ form.password(class_="password", type="password", id="lname", placeholder="Password", value="") }}
 
                 <button class="login_button">Login</button> <br />
             </form>

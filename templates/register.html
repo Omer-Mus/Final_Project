@@ -14,31 +14,30 @@
 
     <div class="div_first">
         <form method="POST" action="">
+            {{ form.hidden_tag() }}
             <div class="div_left">
-                {{ form.hidden_tag() }}
-{#                <input class="full_name_register" type="text" id="fname" name="fname" placeholder="Full Name" required>#}
-                {{ form.full_name(class_="full_name_register", id="fname", placeholder="Enter Full Name", autocomplete="off", value="") }}
+                <input class="full_name_register" type="text" id="fname" name="fname" placeholder="Full Name">
+{#                {{ form.full_name(class_="full_name_register", id="fname", placeholder="Enter Full Name", autocomplete="off", value="") }}#}
                 <br>
 {#                <input class="user_name_register" type="text" id="fname" name="user_name" placeholder="User Name" required> #}
-                {{ form.username(class_="user_name_register", id="fname", placeholder="Enter User Name", autocomplete="off", value="") }}
+                {{ form.username(class_="user_name_register", id="fname", placeholder="Enter User Name", autocomplete="off") }}
                 <br>
-{#                <input class="email_address_register" type="email" id="fname" name="email" placeholder="Email Address" required>#}
-                {{ form.email(class_="email_address_register", type="email", id="fname", placeholder="Enter Email Address", autocomplete="off", value="") }}
+                <input class="email_address_register" type="email" id="fname" name="email" placeholder="Email Address">
+{#                {{ form.email(class_="email_address_register", id="fname", placeholder="Enter Email Address", autocomplete="off", value="") }}#}
                 <br>
 {#                <input class="password_register" type="password" id="lname" name="pword" placeholder="Password" minlength="5" required>#}
                 {{ form.password(class_="password_register", type="password", id="lname", placeholder="Password", autocomplete="off", value="", minlength="5", maxlength="20") }}
             </div>
 
             <div class="div_right">
-
-{#                <input class="age_register" type="text" id="fname" name="age" placeholder="Age"> #}
-                {{ form.age(class_="age_register", id="fname", placeholder="Age", min="18", autocomplete="off", value="") }}
+                <input class="age_register" type="text" id="fname" name="age" placeholder="Age">
+{#                {{ form.age(class_="age_register", id="fname", placeholder="Age", min="18", autocomplete="off", value="") }}#}
                 <br>
-{#                <input class="allergies_register" type="text" id="fname" name="allergies" placeholder="Allergies"> #}
-                {{ form.allergies(class_="allergies_register", id="fname", placeholder="allergies", autocomplete="off", value="") }}
+                <input class="allergies_register" type="text" id="fname" name="allergies" placeholder="Allergies">
+{#                {{ form.allergies(class_="allergies_register", id="fname", placeholder="allergies", autocomplete="off", value="") }}#}
                 <br>
-{#                <input class="zipcode_register" type="text" id="fname" name="zip_code" placeholder="Zipcode"> #}
-                {{ form.zip_code(class_="zipcode_register", id="fname", placeholder="Zip code", maxlength="9", autocomplete="off", value="") }}
+                <input class="zipcode_register" type="text" id="fname" name="zip_code" placeholder="Zipcode">
+{#                {{ form.zip_code(class_="zipcode_register", id="fname", placeholder="Zip code", maxlength="9", autocomplete="off", value="") }}#}
                 <br>
 
 
