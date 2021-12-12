@@ -251,9 +251,10 @@ li {
 /* Home.html */
 
 
-.test {
-    font-size: 50px;
+.testing {
+    font-size: 10px;
 }
+
 .logo_home {
     width: 108px;
 }
@@ -288,6 +289,8 @@ li {
     justify-content: flex-start;
     display: flex;
 }
+
+
 
 .picture {
     width: 46px;
