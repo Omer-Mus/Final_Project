@@ -250,8 +250,13 @@ li {
 
 /* Home.html */
 
+
+.testing {
+    font-size: 10px;
+}
+
 .logo_home {
-    width: 140px;
+    width: 108px;
 }
 
 .search_recipe {
@@ -284,6 +289,8 @@ li {
     justify-content: flex-start;
     display: flex;
 }
+
+
 
 .picture {
     width: 46px;
