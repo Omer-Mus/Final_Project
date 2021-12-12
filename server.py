@@ -33,11 +33,8 @@ class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
     password = db.Column(db.String(80), nullable=False)
-    # email = db.Column(db.String(40), nullable=True)
-    # full_name = db.Column(db.Text, nullable=False)
-    # age = db.Column(db.Integer, nullable=False)
-    # zip_code = db.Column(db.String(10), nullable=False)
-    # allergies = db.Column(db.Text, nullable=False)
+    email = db.Column(db.String(40), nullable=True)
+    full_name = db.Column(db.Text, nullable=False)
 
 
 class RegistrationForm(FlaskForm):
@@ -45,14 +42,10 @@ class RegistrationForm(FlaskForm):
         min=4, max=20)], render_kw={"placeholder": "User Name"})
     password = PasswordField(validators=[InputRequired(), Length(
         min=5, max=20)], render_kw={"placeholder": "Password"})
-    # full_name = StringField(validators=[InputRequired(), Length(
-    #     min=5, max=40)], render_kw={"placeholder": "Full name"})
-    # email = StringField(validators=[InputRequired(), Length(
-    #     min=4, max=30)], render_kw={"placeholder": "Email"})
-    # age = IntegerField(validators=[InputRequired()], render_kw={"placeholder": "Age"})
-    # zip_code = StringField(validators=[InputRequired(), Length(
-    #     min=5, max=9)], render_kw={"placeholder": "Zip Code"})
-    # allergies = StringField(render_kw={"placeholder": "allergies"})
+    full_name = StringField(validators=[InputRequired(), Length(
+        min=5, max=40)], render_kw={"placeholder": "Full name"})
+    email = StringField(validators=[InputRequired(), Length(
+        min=4, max=30)], render_kw={"placeholder": "Email"})
 
     submit = SubmitField("Register")
 
@@ -116,6 +109,7 @@ def register():
         db.session.commit()
         return redirect(url_for("index"))
     return render_template("register.html", form=form)
+
 
 @app.route('/home.html')
 def home():
