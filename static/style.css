@@ -303,6 +303,7 @@
     height: 80px;
     border-radius: 80px;
     background-color: #bbdea2;
+    margin: 10px;
 }
 
 
@@ -314,6 +315,7 @@
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
+    font-weight: bold;
 }
 
 /* trending recipes */
