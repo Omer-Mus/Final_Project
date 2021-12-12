@@ -5,7 +5,7 @@ from wtforms import StringField, PasswordField, SubmitField, IntegerField, Field
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_wtf import FlaskForm
 from flask_bcrypt import Bcrypt
-
+import os
 app = Flask(__name__)
 
 bcrypt = Bcrypt(app)
@@ -31,10 +31,11 @@ def load_user(user_id):
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    username = db.Column(db.String(20), nullable=False, unique=True)
+    username = db.Column(db.String(20), nullable=False, unique=False)
     password = db.Column(db.String(80), nullable=False)
-    email = db.Column(db.String(40), nullable=True)
-    full_name = db.Column(db.Text, nullable=False)
+    email = db.Column(db.String(40), nullable=False)
+    first = db.Column(db.String(40), nullable=True)
+    last = db.Column(db.String(40), nullable=True)
 
 
 class RegistrationForm(FlaskForm):
@@ -42,10 +43,12 @@ class RegistrationForm(FlaskForm):
         min=4, max=20)], render_kw={"placeholder": "User Name"})
     password = PasswordField(validators=[InputRequired(), Length(
         min=5, max=20)], render_kw={"placeholder": "Password"})
-    full_name = StringField(validators=[InputRequired(), Length(
-        min=5, max=40)], render_kw={"placeholder": "Full name"})
     email = StringField(validators=[InputRequired(), Length(
         min=4, max=30)], render_kw={"placeholder": "Email"})
+    first = StringField(validators=[InputRequired(), Length(
+        min=2, max=30)], render_kw={"placeholder": "First name"})
+    last = StringField(validators=[InputRequired(), Length(
+        min=1, max=30)], render_kw={"placeholder": "Last name"})
 
     submit = SubmitField("Register")
 
@@ -104,7 +107,7 @@ def register():
 
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data)
-        new_user = User(username=form.username.data, password=hashed_password)
+        new_user = User(username=form.username.data, password=hashed_password, email=form.email.data, first=form.first.data, last=form.last.data)
         db.session.add(new_user)
         db.session.commit()
         return redirect(url_for("index"))
