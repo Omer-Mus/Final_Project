@@ -210,7 +210,7 @@
 
 
 /*Nevigation bar*/
-ul {
+.ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -219,13 +219,15 @@ ul {
     background-color: #77bc3e;
 }
 
-li {
+.li_left {
     float: left;
     padding: 0px 10px 0px 0px;
-/*    border-right: 1px solid #bbb;*/
-    
 }
 
+.li_right {
+    float: right;
+    padding: 0px 10px 0px 20px;
+}
     li:last-child {
         border-right: none;
     }
@@ -247,28 +249,31 @@ li {
 }
 
 
-
 /* Home.html */
 
 .logo_home {
-    width: 108px;
+    width: 190px;
 }
 
 .search_recipe {
-    width: 400px;
-    padding: 10px;
-    margin: 8px;
+    width: 530px;
+    padding: 14px;
+    top: 22px;
     text-align: center;
     color: grey;
     position: relative;
-    background-color: #f7f5f5;
+    background-color: #d7d2d2;
     border: none;
+
+
 }
 
 .profile_picture {
-    width: 40px;
+    width: 50px;
     position: relative;
-    top: 9px;
+    top: 19px;
+    padding-left: 3px;
+}
 }
 .user_profile {
     font-family: Tahoma;
@@ -276,12 +281,13 @@ li {
     font-weight: bold;
     border: white;
     font-size: 30px;
+    float: right;
 }
 
 .title_slide_show {
     padding-top: 20px;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 19px;
     font-size: 23px;
 }
 
@@ -303,10 +309,11 @@ li {
     padding-bottom: 10px;
     border-bottom: 1px solid black;
     width: 100%;
+    text-align: center;
 }
 
 /* trending recipes */
 .picture_square {
     width: 194px;
-    padding-right: 26 px;
+    padding-right: 26px;
 }
