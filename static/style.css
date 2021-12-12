@@ -309,6 +309,7 @@
 
 .picture:hover:not(.active) {
     background-color: green;
+    cursor: pointer;
 }
 .category {
     padding-bottom: 10px;
@@ -322,4 +323,8 @@
 .picture_square {
     width: 194px;
     padding-right: 26px;
+}
+
+.picture_square:hover:not(.active) {
+    cursor: pointer;
 }
