@@ -17,57 +17,79 @@
 
 <body>
 
+
+
+    <ul>
+
+        <li> <image class="logo_home" src="{{url_for('static',filename = 'images/logo/logo_garlic.png')}}"> </li>
+        <li> <input class="search_recipe" type="text" id="fname" name="age" placeholder="Find a recipe"> </li>
+        <li> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/profile-icon.png')}}"> </li>
+        <li> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/shopping-cart.png')}}"> </li>
+        <li> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/setting-icon.png')}}"> </li>
+
+
+    </ul>
+
+    <!--slideshow-->
+
+    <div class="title_slide_show"> Dietary Restrictions </div>
+    <div class="category_container">
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/lactose-intolerance.png')}}"> <br /> Lactose <br /> Intolerance </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/gluten-intolerance.png')}}"> <br /> Gluten <br /> Intolerance </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegetarian.png')}}"> <br /> Vegetarianian </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegan.png')}}"> <br /> Veganism </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/kosher.png')}}"> <br /> Kosher </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/keto.png')}}"> <br /> Keto </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/diabetes.png')}}"> <br /> Diabetes </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/dairy-free.png')}}"> <br /> Dairy - Free </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/low-carb.png')}}"> <br /> Low Carb </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/nut-free.jpeg')}}"> <br /> Nut - Free </span>
+    </div>
+
+
+    <br />
+    <br />
+
+
+    <div class="title_slide_show"> Categories </div>
+    <div class="category_container">
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/thai.jpeg')}}"> <br /> Thai </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/italian.jpeg')}}"> <br /> Italian </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/chinese.jpeg')}}"> <br /> Chinese </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/no-picture')}}"> <br /> Mexican </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/indian.png')}}"> <br /> Indian </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/japanese.png')}}"> <br /> Japanese </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/no-picture')}}"> <br /> Korean </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/no-picture')}}"> <br /> Salad </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/baked-goods.png')}}"> <br /> Baked Goods </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories2/dessert.png')}}"> <br /> Dessert </span>
+    </div>
+
+
+
+    <br />
+    <br />
     
+    <div class="title_slide_show"> Trending Recipes </div>
+    <div class="category_container">
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/trending/1.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/trending/2.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/trending/3.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/trending/4.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/trending/5.png')}}"> </span>
+    </div>
 
-        <ul>
-            <li> <img class="logo_home" src="../images/logo/logo_garlic.png" . alt="logo"> </li>
-            <li> <input class="search_recipe" type="text" id="fname" name="age" placeholder="Find a recipe"> </li>
-            <li> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </li>
-            <li><a class="user_profile" href="#profile">Profile</a></li>
-
-        </ul>
-
-        <div class="testing"> bla bla</div>
-        <!--slideshow-->
-        <div class="category_container">
-
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/lactose-intolerance.png')}}"> <br /> Lactose <br /> Intolerance </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/gluten-intolerance.png')}}"> <br /> Gluten <br /> Intolerance </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegetarian.png')}}"> <br /> Vegetarianian </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegan.png')}}"> <br /> Veganism </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/kosher.png')}}"> <br /> Kosher </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/keto.png')}}"> <br /> Keto </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/diabetes.png')}}"> <br /> Diabetes </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/dairy-free.png')}}"> <br /> Dairy - Free </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/low-carb.png')}}"> <br /> Low Carb </span>
-            <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/nut-free.jpeg')}}"> <br /> Nut - Free </span>
-        </div>
+    <div class="title_slide_show"> New Recipes </div>
+    <div class="category_container">
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/new/1.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/new/2.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/new/3.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/new/4.png')}}"> </span>
+        <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/new/5.png')}}"> </span>
+    </div>
 
 
-        <br />
-        <br />
-
-
-        <div class="new_recipes_container">
-            <span> NEW RECIPES </span> <br />
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-        </div>
-
-
-
-        <div class="trending_recipes_container">
-            <span> TRENDING RECIPES </span> <br />
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-            <span class="category"> <img class="profile_picture" src="profile_picture.png" . alt="logo"> </span>
-        </div>
-        <a href="{{ url_for('logout') }}">press here to logout</a>
+    <a href="{{ url_for('logout') }}">press here to logout</a>
 
 
 

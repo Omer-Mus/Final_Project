@@ -250,28 +250,23 @@ li {
 
 /* Home.html */
 
-
-.testing {
-    font-size: 10px;
-}
-
 .logo_home {
     width: 108px;
 }
 
 .search_recipe {
-    width: 250px;
+    width: 400px;
     padding: 10px;
     margin: 8px;
     text-align: center;
     color: grey;
     position: relative;
-    top: 5px;
+    background-color: #f7f5f5;
+    border: none;
 }
 
 .profile_picture {
-    width: 46px;
-    border-radius: 80px;
+    width: 40px;
     position: relative;
     top: 9px;
 }
@@ -283,6 +278,12 @@ li {
     font-size: 30px;
 }
 
+.title_slide_show {
+    padding-top: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
 .category_container {
     list-style: none;
     overflow-x: scroll;
@@ -290,9 +291,21 @@ li {
     display: flex;
 }
 
-
-
 .picture {
-    width: 46px;
+    width: 80px;
+    height: 80px;
     border-radius: 80px;
+    background-color: green;
+}
+
+.category {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+/* trending recipes */
+.picture_square {
+    width: 130px;
+    padding-right: 26 px;
 }
