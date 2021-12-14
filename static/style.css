@@ -338,3 +338,34 @@ li a:hover:not(.active) {
     background-color: green;
     margin: 10px;
 }
+
+
+/*shopping-cart.html*/
+
+.shopping_cart_title {
+    font-size: 40px;
+    margin: 18px;
+    font-weight: bold;
+}
+
+.shopping_cart_pic {
+    width: 100%;
+}
+
+.shopping_cart_subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.to_touch {
+    cursor: pointer;
+    border-color: red;
+    margin: 10px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    /* top: -21%; */
+    top: 11%;
+    right: -88.5%;
+}

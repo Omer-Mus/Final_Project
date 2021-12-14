@@ -136,6 +136,14 @@ def dated_url_for(endpoint, **values):
 def home_selected():
     return render_template("home-selected.html")
 
+@app.route('/shopping-cart.html')
+def shopping_cart():
+    return render_template("shopping-cart.html")
+
+@app.route('/shopping-cart-select.html')
+def shopping_cart_select():
+    return render_template("shopping-cart-select.html")
+
 
 
 if __name__ == "__main__":
