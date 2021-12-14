@@ -6,6 +6,7 @@
     <title>Garlic</title>
 {#    <link href="../static/style.css" rel="stylesheet" type="text/css" /> #}
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'images/logo/logo_garlic.png') }}">
 </head>
 
 
@@ -22,18 +23,19 @@
                 <br>
                 {{ form.first(class_="full_name_register", id="fname", placeholder="Enter First Name", autocomplete="off", value="") }}
                 <br>
+                <br>
                 {{ form.last(class_="full_name_register", id="fname", placeholder="Enter Last Name", autocomplete="off", value="") }}
-
-            <!--</div>-->
-
-            <!--<div class="div_right">-->
+                <br>
+                <br>
                 {{ form.email(class_="email_address_register", id="fname", placeholder="Enter Email Address", autocomplete="off", value="") }}
                 <br>
-                {{ form.password(class_="password_register", type="password", id="lname", placeholder="Password", autocomplete="off", value="", minlength="5", maxlength="20") }}
-
                 <br>
-
-
+                {{ form.password(class_="password_register", type="password", id="lname", placeholder="Password", autocomplete="off", value="", minlength="5", maxlength="20") }}
+                <br>
+                <br>
+                <input class="password_register" type="password" placeholder="Confirm Password"id="fname" name="fname">
+                <br>
+                <br>
                 {{ form.submit(class_="register_button") }}
                 <br />
                 <span class="login">Not your first time? click here to <a href="/">login</a>.</span>

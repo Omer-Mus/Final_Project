@@ -34,25 +34,7 @@
     top: 20px;
 }
 
-.div_first2 {
-    background-color: rgb(255 255 255 / 70%);
-    border-radius: 25px;
-    top: 50%;
-    width: 700px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.div_center {
-    display: inline-block;
-    min-width: 300px;
-    width: 300px;
-    height: 300px;
-    position: relative;
-    right: -50%;
-    top: 20px;
-}
 
 .state1 {
     font-family: Tahoma;
@@ -68,11 +50,6 @@
     font-weight: bold;
 }
 
-/*.lable_user_name {
-    font-family: Tahoma;
-    color: white;
-}*/
-
 .user_name {
     width: 250px;
     padding: 10px;
@@ -83,12 +60,6 @@
     left: 9%;
     top: 25px;
 }
-/*
-.lable_password {
-    font-family: Tahoma;
-    color: white;
-}*/
-
 
 .password {
     width: 250px;
@@ -120,12 +91,33 @@
     font-size: 15px;
     position: relative;
     left: 10%;
-    top: 75px;
+    top: 42px;
 }
 
 
 
 /* register.html */
+
+.div_first2 {
+    background-color: rgb(255 255 255 / 70%);
+    border-radius: 25px;
+    top: 50%;
+    width: 450px;
+    height: 510px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div_center {
+    display: inline-block;
+    min-width: 300px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    right: -25%;
+    top: 50px;
+}
 
 .full_name_register {
     width: 250px;
@@ -135,7 +127,7 @@
     color: grey;
     position: relative;
 /*    left: 9%;*/
-    top: 15px;
+/*    top: 15px;*/
 }
 
 .user_name_register {
@@ -145,8 +137,8 @@
     text-align: center;
     color: grey;
     position: relative;
-/*    left: 9%;*/
-    top: 25px;
+    /*    left: 9%;*/
+    /*    top: 25px;*/
 }
 
 .email_address_register {
@@ -157,7 +149,7 @@
     color: grey;
     position: relative;
 /*    left: 9%;*/
-    top: 35px;
+/*    top: 35px;*/
 }
 
 .password_register {
@@ -168,41 +160,7 @@
     color: grey;
     position: relative;
 /*    left: 9%;*/
-    top: 45px;
-}
-
-
-.age_register {
-    width: 250px;
-    padding: 10px;
-    /*    margin: 15px;*/
-    text-align: center;
-    color: grey;
-    position: relative;
-    left: 3%;
-    top: 27px;
-}
-
-.allergies_register {
-    width: 250px;
-    padding: 10px;
-    /*    margin: 15px;*/
-    text-align: center;
-    color: grey;
-    position: relative;
-    left: 3%;
-    top: 37px;
-}
-
-.zipcode_register {
-    width: 250px;
-    padding: 10px;
-    /*    margin: 15px;*/
-    text-align: center;
-    color: grey;
-    position: relative;
-    left: 3%;
-    top: 47px;
+/*    top: 45px;*/
 }
 
 .register_button {
@@ -213,8 +171,8 @@
     font-family: Tahoma;
     color: white;
     position: relative;
-    left: 3%;
-    top: 57px;
+/*    left: 3%;*/
+/*    top: 57px;*/
 }
 
 .login {
@@ -223,7 +181,7 @@
     font-size: 15px;
     position: relative;
     left: 3%;
-    top: 75px;
+    top: 10px;
 }
 
 
@@ -336,6 +294,7 @@ li a:hover:not(.active) {
     border-radius: 80px;
     background-color: #bbdea2;
     margin: 10px;
+
 }
 
 
@@ -366,8 +325,12 @@ li a:hover:not(.active) {
     cursor: pointer;
 }
 
-/*home-selected.html*/
+.remove_hyperlink {
+    text-decoration: none;
+    color: black;
+}
 
+/*home-selected.html*/
 .picture-colored {
     width: 80px;
     height: 80px;

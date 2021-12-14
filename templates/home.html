@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Garlic</title>
     <!--<link href="../static/style.css" rel="stylesheet" type="text/css" />-->
-    <link rel="icon" type="image/x-icon" href="logo_garlic.png">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'images/logo/logo_garlic.png') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
 </head>
@@ -31,15 +31,12 @@
 
     <!--slideshow-->
 
-    <!--<span class="register">New to Garlic? click here to <a href="register.html">register</a>.</span>-->
-    <!--<a href="/home-selected.html">-->
-
     <div class="title_slide_show"> Dietary Restrictions </div>
     <div class="category_container">
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/lactose-intolerance.png')}}"> <br /> Lactose <br /> Intolerance </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/gluten-intolerance.png')}}"> <br /> Gluten <br /> Intolerance </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegetarian.png')}}"> <br /> Vegetarianian </span>
-        <span class="category"> <a href="home-selected.html"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegan.png')}}"> <br /> Veganism </span> </a>
+        <span class="category"> <a class="remove_hyperlink" href="home-selected.html"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegan.png')}}"> <br /> Veganism </span> </a>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/kosher.png')}}"> <br /> Kosher </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/keto.png')}}"> <br /> Keto </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/diabetes.png')}}"> <br /> Diabetes </span>

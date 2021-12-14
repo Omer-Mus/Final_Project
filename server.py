@@ -132,6 +132,10 @@ def dated_url_for(endpoint, **values):
             values['q'] = int(os.stat(file_path).st_mtime)
     return url_for(endpoint, **values)
 
+@app.route('/home-selected.html')
+def home_selected():
+    return render_template("home-selected.html")
+
 
 
 if __name__ == "__main__":
