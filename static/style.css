@@ -395,3 +395,14 @@ li a:hover:not(.active) {
     top: -30%;
     right: -89.5%;
 }
+
+/* recipe1.html */
+
+.recipe_title1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.review {
+    width: 600px;
+}

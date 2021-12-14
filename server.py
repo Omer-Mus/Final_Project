@@ -152,6 +152,14 @@ def shopping_cart_select2():
 def shopping_cart_select3():
     return render_template("shopping-cart-select3.html")
 
+@app.route('/recipe1.html')
+def recipe1():
+    return render_template("recipe1.html")
+
+@app.route('/recipe2.html')
+def recipe2():
+    return render_template("recipe2.html")
+
 
 if __name__ == "__main__":
 
