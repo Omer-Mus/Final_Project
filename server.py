@@ -160,6 +160,16 @@ def recipe1():
 def recipe2():
     return render_template("recipe2.html")
 
+@app.route('/review1.html')
+def review1():
+    return render_template("review1.html")
+
+@app.route('/write-review1.html')
+def write_review1():
+    return render_template("write-review1.html")
+
+
+
 
 if __name__ == "__main__":
 
