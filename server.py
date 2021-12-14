@@ -144,6 +144,13 @@ def shopping_cart():
 def shopping_cart_select():
     return render_template("shopping-cart-select.html")
 
+@app.route('/shopping-cart-select2.html')
+def shopping_cart_select2():
+    return render_template("shopping-cart-select2.html")
+
+@app.route('/shopping-cart-select3.html')
+def shopping_cart_select3():
+    return render_template("shopping-cart-select3.html")
 
 
 if __name__ == "__main__":
