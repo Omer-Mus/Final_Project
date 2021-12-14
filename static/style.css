@@ -34,6 +34,26 @@
     top: 20px;
 }
 
+.div_first2 {
+    background-color: rgb(255 255 255 / 70%);
+    border-radius: 25px;
+    top: 50%;
+    width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div_center {
+    display: inline-block;
+    min-width: 300px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: -50%;
+    top: 20px;
+}
+
 .state1 {
     font-family: Tahoma;
     color: green;
@@ -323,6 +343,11 @@ li a:hover:not(.active) {
     background-color: green;
     cursor: pointer;
 }
+
+.picture:active {
+    background-color: yellow;
+}
+
 .category {
     padding-bottom: 10px;
     border-bottom: 1px solid black;
@@ -339,4 +364,14 @@ li a:hover:not(.active) {
 
 .picture_square:hover:not(.active) {
     cursor: pointer;
+}
+
+/*home-selected.html*/
+
+.picture-colored {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: green;
+    margin: 10px;
 }

@@ -12,10 +12,11 @@
 
 <body class="general_background">
 
-    <div class="div_first">
+    <div class="div_first2">
         <form method="POST" action="">
             {{ form.hidden_tag() }}
-            <div class="div_left">
+            <!--<div class="div_left">-->
+            <div class="div_center">
                 {{ form.username(class_="user_name_register", id="fname", placeholder="Enter User Name", autocomplete="off") }}
                 <br>
                 <br>
@@ -23,9 +24,9 @@
                 <br>
                 {{ form.last(class_="full_name_register", id="fname", placeholder="Enter Last Name", autocomplete="off", value="") }}
 
-            </div>
+            <!--</div>-->
 
-            <div class="div_right">
+            <!--<div class="div_right">-->
                 {{ form.email(class_="email_address_register", id="fname", placeholder="Enter Email Address", autocomplete="off", value="") }}
                 <br>
                 {{ form.password(class_="password_register", type="password", id="lname", placeholder="Password", autocomplete="off", value="", minlength="5", maxlength="20") }}
