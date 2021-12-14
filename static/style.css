@@ -406,3 +406,22 @@ li a:hover:not(.active) {
 .review {
     width: 600px;
 }
+
+.recipe_title2 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.recipe_pic {
+    width: 200px;
+}
+
+.recipe_title3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*.direction_recipe {
+    border-style: solid;
+    border-color:green;
+}*/
