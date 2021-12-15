@@ -25,7 +25,17 @@
 
         <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/setting-icon.png')}}"> </li>
         <li class="li_right"> <a class="remove_hyperlink" href="shopping-cart.html"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/shopping-cart.png')}}"> </li> </a>
-        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/profile-icon.png')}}"> </li>
+        <li class="li_right">
+
+            <div class="dropdown">
+                <button class="dropdtn"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/profile-icon.png')}}"> </button>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('logout') }}">Log out</a>
+                </div>
+
+            </div>
+
+        </li>
     </ul>
 
     <!--shopping cart-->
@@ -46,7 +56,6 @@
     <div> <image class="shopping_cart_pic" src="{{url_for('static',filename = 'images/shopping-cart/3.png')}}">  </div>
 
 
-    <a href="{{ url_for('logout') }}">press here to logout</a>
 
     <a class="remove_hyperlink" href="shopping-cart-select.html"> <div class="to_touch1"> </div>  </a>
     <a class="remove_hyperlink" href="shopping-cart-select2.html"> <div class="to_touch2"> </div>  </a>
