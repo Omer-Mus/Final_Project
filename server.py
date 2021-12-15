@@ -181,6 +181,10 @@ def user_setting_selected():
 def ingredient():
     return render_template("ingredient.html")
 
+@app.route('/recipe1-vegan.html')
+def recipe1_vegan():
+    return render_template("recipe1-vegan.html")
+
 
 if __name__ == "__main__":
 

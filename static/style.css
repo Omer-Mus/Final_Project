@@ -547,19 +547,24 @@ li a:hover:not(.active) {
     font-weight: bold;
 }
 
+.s0 {
+    position: relative;
+    top:89px;
+}
+
 .s1 {
     position: relative;
-    top: 79px;
+    top: 89px;
 }
 
 .s2 {
     position: relative;
-    top: 110px;
+    top: 92px;
 }
 
 .s3 {
     position: relative;
-    top: 130px;
+    top: 120px;
 }
 
 /* trending recipes */
