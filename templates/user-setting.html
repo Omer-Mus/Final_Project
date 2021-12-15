@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Garlic</title>
+    <!--<link href="../static/style.css" rel="stylesheet" type="text/css" />-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'images/logo/logo_garlic.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+
+    
+
+  
+    
+
+<body>
+
+
+
+    <ul class="ul">
+
+        <li class="li_left"> <a class="remove_hyperlink" href="home.html"> <image class="logo_home" src="{{url_for('static',filename = 'images/logo/logo_garlic.png')}}"> </li> </a>
+        <li class="li_left"> <input class="search_recipe" type="text" id="fname" name="age" placeholder="Find a recipe"> </li>
+
+        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/setting-icon.png')}}"> </li>
+        <li class="li_right"> <a class="remove_hyperlink" href="shopping-cart.html"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/shopping-cart.png')}}"> </li> </a>
+        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/profile-icon.png')}}"> </li>
+    </ul>
+
+    <!--shopping cart-->
+
+    <br />
+    <div class="recipe_title2"> Want to try a recipe that doesn’t fit your dietary needs? </div>
+    <div class="recipe_title2">We can make it fit your personal needs! Simply let us know your more about you.</div>
+
+    <br />
+    <br />
+    <br />
+    <div class="recipe_title2">Select one or more of these preset dietary preferences or allergies you have:</div>
+
+
+
+    <div class="category_container">
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/lactose-intolerance.png')}}"> <br /> Lactose <br /> Intolerance </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/gluten-intolerance.png')}}"> <br /> Gluten <br /> Intolerance </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegetarian.png')}}"> <br /> Vegetarianian </span>
+        <span class="category"> <a class="remove_hyperlink" href="user-setting-selected.html"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/vegan.png')}}"> <br /> Veganism </span> </a>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/kosher.png')}}"> <br /> Kosher </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/keto.png')}}"> <br /> Keto </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/diabetes.png')}}"> <br /> Diabetes </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/dairy-free.png')}}"> <br /> Dairy - Free </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/low-carb.png')}}"> <br /> Low Carb </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/categories1/nut-free.jpeg')}}"> <br /> Nut - Free </span>
+    </div>
+
+    <div class="category_container">
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/shellfish.png')}}"> <br /> Shellfish <br /> Allergy </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/sesame.png')}}"> <br /> Soy <br /> Allergy </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/halal.png')}}"> <br /> Halal </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/pescatarian.png')}}"> <br /> Pescetarian </span> 
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/egg.png')}}"> <br /> Egg <br /> Allergy </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/paleo.png')}}"> <br /> Paleo </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/soy.png')}}"> <br /> Sesame <br /> Allergy </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/bean.png')}}"> <br /> Bean <br /> Intolerance </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/meat.png')}}"> <br /> Carnivore Diet </span>
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/honey.png')}}"> <br /> Honey Allergy </span>
+    </div>
+
+
+    <button class="button2 remove_hyperlink2"> Save Restrictions </button>
+
+
+
+    <a href="{{ url_for('logout') }}">press here to logout</a>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+
+
+
+</html>

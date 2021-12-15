@@ -169,6 +169,13 @@ def write_review1():
     return render_template("write-review1.html")
 
 
+@app.route('/user-setting.html')
+def user_setting():
+    return render_template("user-setting.html")
+
+@app.route('/user-setting-selected.html')
+def user_setting_selected():
+    return render_template("user-setting-selected.html")
 
 
 if __name__ == "__main__":

@@ -213,9 +213,13 @@
     padding: 0px 10px 0px 20px;
 }
 
-.profile_picture:hover {
-    background-color:green;
+.profile_picture:hover:not(.active) {
+    cursor: pointer;
 }
+
+/*.profile_picture:hover {
+    background-color:green;
+}*/
 /*    li:last-child {
         border-right: none;
     }
@@ -432,6 +436,8 @@ li a:hover:not(.active) {
     
 }
 
+
+/* write-review1.html */
 .write_review1 {
     color: gray;
 }
@@ -439,8 +445,8 @@ li a:hover:not(.active) {
 .remove_hyperlink1 {
     text-decoration: none;
     color: black;
-/*    background-color: green;*/
-    background-color: #4CAF50; /* Green */
+    /*    background-color: green;*/
+    background-color: #77bc3e; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -451,7 +457,34 @@ li a:hover:not(.active) {
 }
 
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #77bc3e; /* Green */
+    /*    border: none;*/
+    color: white;
+    padding: 0px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-color: grey;
+    position: absolute;
+    bottom: 123px;
+}
+
+.review_tump {
+    width: 39px;
+    position: relative;
+    left: 363px;
+    top: -54px;
+    margin: 16px;
+}
+
+/* user-settings.html*/
+
+.remove_hyperlink2 {
+    text-decoration: none;
+    color: black;
+    /*    background-color: green;*/
+    background-color: #77bc3e; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -459,4 +492,13 @@ li a:hover:not(.active) {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    /*    border: none;*/
+    color: white;
+    border-color: grey;
+    position: absolute;
+    margin: 26px 0px;
+}
+
+.remove_hyperlink2:hover:not(.active) {
+    cursor: pointer;
 }
