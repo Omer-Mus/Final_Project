@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Garlic</title>
+    <!--<link href="../static/style.css" rel="stylesheet" type="text/css" />-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'images/logo/logo_garlic.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+
+    
+
+  
+    
+
+<body>
+
+
+
+    <ul class="ul">
+
+        <li class="li_left"> <a class="remove_hyperlink" href="home.html"> <image class="logo_home" src="{{url_for('static',filename = 'images/logo/logo_garlic.png')}}"> </li> </a>
+        <li class="li_left"> <input class="search_recipe" type="text" id="fname" name="age" placeholder="Find a recipe"> </li>
+
+        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/setting-icon.png')}}"> </li>
+        <li class="li_right"> <a class="remove_hyperlink" href="shopping-cart.html"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/shopping-cart.png')}}"> </li> </a>
+        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/profile-icon.png')}}"> </li>
+    </ul>
+
+    <!--shopping cart-->
+
+    <br />
+    <div class="recipe_title1"> Ground beef </div>
+
+    <br />
+
+    <div class="ingredient_container">
+        <div> <image class="ingredient_picture1" src="{{url_for('static',filename = 'images/ingredient/ground-beef.jpeg')}}"></div>
+        <div> <image class="ingredient_picture2" src="{{url_for('static',filename = 'images/ingredient/1.png')}}"></div>
+        <div> <image class="ingredient_picture3" src="{{url_for('static',filename = 'images/ingredient/2.png')}}"></div>
+    </div>
+
+    <div> <button class="remove_hyperlink2"> Add to cart </button> </div>
+
+    <div class="s1">
+        <div class="title_slide_show"> Possible substitutions </div>
+        <div class="category_container">
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/p1.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/p2.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/p3.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/p4.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/p5.png')}}"> </span>
+        </div>
+    </div>
+
+
+    <br />
+
+    <div class="s2">
+        <div class="shopping_cart_subtitle"> Where to buy </div>
+        <br />
+
+        <div> <image class="shopping_cart_pic" src="{{url_for('static',filename = 'images/shopping-cart/2.png')}}">  </div>
+    </div>
+
+    <div class="s3">
+        <div class="title_slide_show"> Related Recipes </div>
+        <div class="category_container">
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/r1.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/r2.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/r3.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/r4.png')}}"> </span>
+            <span class="category"> <image class="picture_square" src="{{url_for('static',filename = 'images/ingredient/r5.png')}}"> </span>
+        </div>
+    </div>
+
+    <a href="{{ url_for('logout') }}">press here to logout</a>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+
+
+
+</html>

@@ -213,9 +213,7 @@
     padding: 0px 10px 0px 20px;
 }
 
-.profile_picture:hover:not(.active) {
-    cursor: pointer;
-}
+
 
 /*.profile_picture:hover {
     background-color:green;
@@ -268,7 +266,11 @@ li a:hover:not(.active) {
     top: 19px;
     padding-left: 3px;
 }
+
+.profile_picture:hover:not(.active) {
+    cursor: pointer;
 }
+
 .user_profile {
     font-family: Tahoma;
     color: white;
@@ -502,3 +504,70 @@ li a:hover:not(.active) {
 .remove_hyperlink2:hover:not(.active) {
     cursor: pointer;
 }
+
+/* ingredient.html */
+
+.ingredient_picture1 {
+    width: 355px;
+    border: 1px solid grey;
+    /*    border-color: grey;*/
+}
+
+.ingredient_picture2 {
+    width: 165px;
+    border: 1px solid grey;
+    margin: 0px 60px;
+}
+
+.ingredient_picture3 {
+    width: 422px;
+    border: 1px solid grey;
+    /*    border-color: grey;*/
+}
+
+
+
+.ingredient_container {
+    list-style: none;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    display: flex;
+/*    position: relative;*/
+}
+
+.possible_substitution {
+    list-style: none;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.s1 {
+    position: relative;
+    top: 79px;
+}
+
+.s2 {
+    position: relative;
+    top: 110px;
+}
+
+.s3 {
+    position: relative;
+    top: 130px;
+}
+
+/* trending recipes */
+/*.picture_square {
+    width: 194px;
+    padding-right: 26px;
+}
+
+    .picture_square:hover:not(.active) {
+        cursor: pointer;
+    }*/

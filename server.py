@@ -177,6 +177,10 @@ def user_setting():
 def user_setting_selected():
     return render_template("user-setting-selected.html")
 
+@app.route('/ingredient.html')
+def ingredient():
+    return render_template("ingredient.html")
+
 
 if __name__ == "__main__":
 
