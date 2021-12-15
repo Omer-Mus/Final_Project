@@ -365,7 +365,7 @@
 }
 
 .shopping_cart_pic {
-    width: 100%;
+    width: 780px;
 }
 
 .shopping_cart_subtitle {
@@ -378,12 +378,11 @@
     border-color: red;
     margin: 10px;
     padding: 10px;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    /* top: -21%; */
-    top: -48%;
-    right: -88.5%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 641px;
+    right: 275px;
 }
 
 .to_touch2 {
@@ -393,10 +392,9 @@
     padding: 10px;
     width: 40px;
     height: 40px;
-    position: relative;
-    /* top: -21%; */
-    top: -32%;
-    right: -89.5%;
+    position: absolute;
+    top: 796px;
+    right: 266px;
 }
 
 .to_touch3 {
@@ -406,10 +404,9 @@
     padding: 10px;
     width: 40px;
     height: 40px;
-    position: relative;
-    /* top: -21%; */
-    top: -30%;
-    right: -89.5%;
+    position: absolute;
+    top: 874px;
+    right: 266px;
 }
 
 /* recipe1.html */
