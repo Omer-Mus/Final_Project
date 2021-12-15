@@ -17,14 +17,16 @@
 <body>
 
 
-
     <ul class="ul">
 
         <li class="li_left"> <a class="remove_hyperlink" href="home.html"> <image class="logo_home" src="{{url_for('static',filename = 'images/logo/logo_garlic.png')}}"> </li> </a>
         <li class="li_left"> <input class="search_recipe" type="text" id="fname" name="age" placeholder="Find a recipe"> </li>
 
-        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/setting-icon.png')}}"> </li>
+        <li class="li_right"> <a class="remove_hyperlink" href="user-setting.html"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/setting-icon.png')}}"> </li> </a>
         <li class="li_right"> <a class="remove_hyperlink" href="shopping-cart.html"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/shopping-cart.png')}}"> </li> </a>
+
+
+
         <li class="li_right">
 
             <div class="dropdown">
@@ -36,6 +38,7 @@
             </div>
 
         </li>
+
     </ul>
 
     <!--shopping cart-->
@@ -68,7 +71,7 @@
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/shellfish.png')}}"> <br /> Shellfish <br /> Allergy </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/sesame.png')}}"> <br /> Soy <br /> Allergy </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/halal.png')}}"> <br /> Halal </span>
-        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/pescatarian.png')}}"> <br /> Pescetarian </span> 
+        <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/pescatarian.png')}}"> <br /> Pescetarian </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/egg.png')}}"> <br /> Egg <br /> Allergy </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/paleo.png')}}"> <br /> Paleo </span>
         <span class="category"> <image class="picture" src="{{url_for('static',filename = 'images/setting-category2/soy.png')}}"> <br /> Sesame <br /> Allergy </span>
