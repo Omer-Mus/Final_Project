@@ -185,6 +185,12 @@ def ingredient():
 def recipe1_vegan():
     return render_template("recipe1-vegan.html")
 
+@app.route('/write-review1-vegan.html')
+def write_review_vegan():
+    return render_template("write-review1-vegan.html")
+
+
+
 
 if __name__ == "__main__":
 

@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Garlic</title>
+    <!--<link href="../static/style.css" rel="stylesheet" type="text/css" />-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'images/logo/logo_garlic.png') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+
+    
+
+  
+    
+
+<body>
+
+
+
+    <ul class="ul">
+
+        <li class="li_left"> <a class="remove_hyperlink" href="home.html"> <image class="logo_home" src="{{url_for('static',filename = 'images/logo/logo_garlic.png')}}"> </li> </a>
+        <li class="li_left"> <input class="search_recipe" type="text" id="fname" name="age" placeholder="Find a recipe"> </li>
+
+        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/setting-icon.png')}}"> </li>
+        <li class="li_right"> <a class="remove_hyperlink" href="shopping-cart.html"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/shopping-cart.png')}}"> </li> </a>
+        <li class="li_right"> <image class="profile_picture" src="{{url_for('static',filename = 'images/general/profile-icon.png')}}"> </li>
+    </ul>
+
+    <!--slideshow-->
+
+    <br />
+    <div class="recipe_title1"> VEGAN SPAGHETTI SAUCE AND MEATBALLS </div>
+    <div class="recipe_title1_raiting">  <image class="star_rate" src="{{url_for('static',filename = 'images/review/star.png')}}">  </div>
+
+
+
+
+
+    <form method="get">
+
+        <br>
+        <textarea class="write_review1" rows="20" cols="60" name="description">
+Enter your review here! Was the recipe easy? Was the food good? Tell us your thoughts!
+         </textarea><br>
+    </form>
+
+    <br />
+    <div>
+        <div class="recipe_title2"> Would you recommend this recipe to a friend? </div>
+        <div> <image class="review_tump" src="{{url_for('static',filename = 'images/general/greyup.png')}}"> <image class="review_tump" src="{{url_for('static',filename = 'images/general/greydown.png')}}"></div>
+    </div>
+
+
+    <button class="button"> <a class="remove_hyperlink1" href="review1.html"> Submit Review </a> </button>
+
+
+    <br />
+
+
+
+    <a href="{{ url_for('logout') }}">press here to logout</a>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+
+
+
+</html>

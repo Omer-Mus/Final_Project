@@ -469,7 +469,7 @@ li a:hover:not(.active) {
     font-size: 16px;
     border-color: grey;
     position: absolute;
-    bottom: 123px;
+    bottom: 60px;
 }
 
 .review_tump {
@@ -480,8 +480,13 @@ li a:hover:not(.active) {
     margin: 16px;
 }
 
-/* user-settings.html*/
+.star_rate {
+    width: 222px;
+    margin: 10px 0px;
+}
 
+
+/* user-settings.html*/
 .remove_hyperlink2 {
     text-decoration: none;
     color: black;
@@ -576,3 +581,5 @@ li a:hover:not(.active) {
     .picture_square:hover:not(.active) {
         cursor: pointer;
     }*/
+
+
