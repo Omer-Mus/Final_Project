@@ -382,7 +382,7 @@
     height: 30px;
     position: absolute;
     top: 641px;
-    right: 275px;
+    left: 700px;
 }
 
 .to_touch2 {
@@ -394,7 +394,7 @@
     height: 40px;
     position: absolute;
     top: 796px;
-    right: 266px;
+    left: 700px;
 }
 
 .to_touch3 {
@@ -406,7 +406,7 @@
     height: 40px;
     position: absolute;
     top: 874px;
-    right: 266px;
+    left: 700px;
 }
 
 /* recipe1.html */
@@ -434,15 +434,41 @@
     font-weight: bold;
 }
 
+.button-cart {
+    background-color: #77bc3e; /* Green */
+    /*    border: none;*/
+    color: white;
+    padding: 0px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-color: grey;
+    position: absolute;
+    bottom: -19px;
+    left: 433px;
+}
+
+.button-cart1 {
+    background-color: #77bc3e; /* Green */
+    /*    border: none;*/
+    color: white;
+    padding: 0px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-color: grey;
+    position: absolute;
+    top: 160px;
+    left: 637px;
+}
 /*.direction_recipe {
     border-style: solid;
     border-color:green;
 }*/
-
 /* review1.html .*/
-
 .review_pic {
-    
 }
 
 
